@@ -1,0 +1,35 @@
+/* 
+* @Author: Marte
+* @Date:   2016-07-12 13:56:55
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-07-13 17:16:04
+*/
+html{height:100%;}
+body
+    {width:100%;
+     height:100%;
+     background:#f5f5f5;
+     font-family:'font-family: "Helvetica Neue", "Microsoft Yahei", Tahoma, Arial, Roboto, "Droid Sans", "Droid Sans Fallback", "Heiti SC", sans-self;';
+    }
+.assets{ width:750px;}
+.ass_head{ width:100%; height:88px; background:#0077bb; text-align:center;}
+.ass_head span{color:#fff;font-size:36px; line-height:88px;}
+.ass_nav{ width:99.4%; height:68px; margin:0 auto; margin-top:1px; }
+.nav_list li{ width:171px; height:66px;float:left;}
+.nav_list li a{ color:#999999; font-size:28px;width:171px; height:66px; display:block; line-height:66px; text-align:center;}
+.nav_list li:first-child{ margin-left:100px; margin-right:204px;}
+.nav_list li.cur{ border-bottom:2px solid #0077bb;}
+.nav_list li.cur a{ color:#0077bb;}
+
+@media screen and (min-width:320px) {
+    #main {width:320px;}
+}
+ 
+@media screen and (min-width: 470px) {
+    #main {width:470px;}
+}
+ 
+@media screen and (min-width: 690px) {
+    #main {width:690px;}
+}
+

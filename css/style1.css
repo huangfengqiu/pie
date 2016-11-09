@@ -1,0 +1,92 @@
+html{ font-size:7.5rem; font-family:'PingFang Medium';}
+/* html,body,.con_box{height:100%; } */
+.whole{ width:7.5rem; background:#f5f5f5;}
+
+.my_invest{ width:7.5rem; line-height:0.88rem; background:#0077bb;}
+.my_invest a{ width:0.23rem; height:0.41rem; background:url(../img/arrow1_03.png) no-repeat; background-size:0.23rem 0.41rem; margin:0.23rem 2.65rem 0.23rem 0.23rem;}
+.my_invest span{ font-size:0.28rem; color:#fff;}
+
+.head_nav{ width:7.5rem; background:#fff;}
+.head_nav li{ width:2.5rem;height: 0.67rem; float:left;}
+.head_nav li a{ font-size:0.28rem; color:#999999; display:block; text-align:center; line-height:0.67rem; color:#999999;}
+.head_nav li.active a{ color:#0077bb;}
+.head_nav li.active{ border-bottom:0.02rem solid #0077bb;}
+
+/* .whole{display:-webkit-box; -webkit-box-orient:vertical;} */
+/* .con_box{  overflow-y:auto; position:relative;top:0;left:0;}
+.con{ position:absolute;top:0;left:0;}
+.con_box,.con{  overflow-y:auto;}
+ */
+.con li{ margin-top:0.2rem;}
+.invest_type{ line-height:0.7rem; background:#fff; margin-bottom:0.02rem; }
+.invest_type p{font-size:0.28rem; color:#666; margin-left:0.28rem;}
+.invest_type a{  width:1.7rem; text-align:right;}
+.invest_type a span{ font-size:0.24rem; color:#999999;}
+.invest_type a i{width:0.12rem; height:0.22rem; background:url(../img/arrow2_03.png) no-repeat; background-size:0.12rem 0.22rem;margin-top:0.24rem; margin-left:0.15rem;}
+
+.invset_info{ background:#fff;}
+.invset_info div{ line-height:0.44rem;}
+.info_interest{ padding-bottom:0.22rem;}
+.info_num p{ width:3rem; line-height:0.24rem; padding-left:0.24rem;}
+.info_num p span,.info_interest p span{ font-size:0.24rem;color:#999999;}
+.info_num p i,.info_interest p i{ font-size:0.28rem; color:#666;font-style:normal;}
+.info_interest p{line-height:0.24rem; padding-left:0.24rem;}
+.info_num b,.info_interest b{ font-size:0.28rem;color:#666; font-weight:normal; padding-top:0.1rem; padding-right:0.24rem;}
+
+.foot_nav_box{ width:7.5rem; background:#fff; height:0.98rem; margin-top:0.2rem;padding-top:0.18rem;}
+
+.foot_nav{background:#fff; border-top:0.01rem solid #cccccc;}
+.foot_nav li{width:1.87rem; float:left; font-size:0.2rem; text-align:center;background:url(../img/nav11_03.png) no-repeat top center; background-size:0.45rem 0.43rem; margin-top:0.12rem;}
+.foot_nav li a{color:#999999; display:block; margin-top:0.6rem; padding-bottom:0.15rem;}
+.foot_nav .financing{background:url(../img/nav2_06.png) no-repeat top center;background-size:0.32rem 0.42rem;}
+.foot_nav .account{background:url(../img/nav3_09.png) no-repeat top center;background-size:0.39rem 0.41rem;}
+.foot_nav .more{background:url(../img/nav4_12.png) no-repeat top center;background-size:0.4rem 0.1rem; margin-top:0.32rem;}
+.foot_nav .more a{ margin-top:0.4rem;}
+
+
+/*下面是改变的部分*/
+html,body,.whole{ height:100%;}
+.whole{display:-webkit-box; display:-moz-box;-webkit-box-orient:vertical;-moz-box-orient:vertical;}
+.con_box{-webkit-box-flex:1; -moz-box-flex:1;overflow:hidden; overflow-y:auto; position:relative;top:0; left:0;}
+.con_box>ul{ display:none;}
+.con_box .cur{ display:block;}
+/* .foot_nav_box{display:-webkit-box;}
+.foot_nav_box li{-webkit-box-flex:1; display:block; }
+ */
+
+
+/*充值页面*/
+.re_phone_info{ width:7.5rem;text-align:center; position:relative; height:0.88rem;}
+.re_phone_info span{font-size:0.32rem; color:#fff; display:block;}
+.re_phone_info i{ width:0.44rem; height:0.4rem; background:url(../img/info1_03.png) no-repeat; background-size:100%; position:absolute; top:0.25rem; right:0.3rem;}
+.re_phone_info b{width:0.26rem; height:0.26rem; background:#ff3311; position:absolute;right:0rem;top:0rem;font-size:0.2rem; color:#fff; line-height:0.24rem; border-radius:50%; right:0.22rem; top:0.15rem;text-align:center; font-weight:normal;}
+.rel_con .swiper-slide{ width:7.5rem; height:3.47rem; background:#0077bb;}
+
+.swiper-pagination .swiper-pagination-bullet-active{ background:#9ddafd; opacity:0.5;}
+.swiper-pagination-bullet{ background:#109bea; opacity:0.6;}
+.swiper-slide{text-align:center; color:#fff; padding-top:1.1rem;}
+
+.swiper-slide p{ font-size:0.24rem; font-family:'宋体'; padding-bottom:0.35rem;}
+.swiper-slide span{ font-size:0.46rem;}
+
+/*地址管理的页面*/
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    appearance: none; 
+    -moz-appearanece:none;
+}
+body{ background:#f5f5f5;}
+.add_head{ width:7.5rem;line-height:0.88rem; background:#0077bb; margin-bottom:0.2rem;}
+.add_head i{ width:0.23rem; height:0.41rem; background:url(../img/arrow1_03.png) no-repeat; background-size:0.23rem 0.41rem; float:left; margin-top:0.24rem; margin-left:0.24rem; margin-right:2.65rem;}
+.add_head span{ font-size:0.28rem; color:#fff; float:left;}
+.add_head a{float:right; font-size:0.24rem; color:#fff; margin-right:0.24rem; color:#fff;}
+.add_info li{ line-height:0.88rem; background:#fff; border-bottom:0.03rem solid #eeeeee; font-size:0.26rem; color:#666; padding-left:0.24rem;}
+
+.add_info li input{ width:5rem; height:0.5rem; padding-left:0.15rem; border:0.03rem solid red;outline: 0.01rem solid red; margin-top:0.2rem;}
+
+/*轮播图*/
+.con_img{ width:7.5rem; height:2.5rem; background:url(../img/1212.jpg) no-repeat; background-size:7.5rem 2.5rem;}
+
+.rel_con .swiper-slide{width:7.5rem; height:3.47rem; background:url(../img/1212.jpg) no-repeat; background-size:7.5rem 3.47rem;}
+
+

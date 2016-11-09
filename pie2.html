@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/pie.css" />
+<script type="text/javascript" src="js/fontsizeset.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/echarts.common.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+             // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+            //app.title = '嵌套环形图';
+        option = {
+            title:{
+                text:'我的总资产',
+                subtext: '10000.00',
+                x:'center',
+                y:'center',
+                itemGap:5,
+                textStyle: {
+                    fontSize: 10,
+                    fontWeight: 'normal',
+                    color: '#666666'          // 主标题文字颜色
+                },
+                subtextStyle:{
+                    color:'#666666',
+                    //fontSize:80+'rem'
+                }
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            color:['#993366', '#99CCFF','#FF6699'],
+            backgroundColor:'#fff',
+            /*legend: {
+                orient: 'vertical',
+                x: 'left',
+                data:['直达','营销广告','搜索引擎','邮件营销','联盟广告','视频广告','百度','谷歌','必应','其他']
+            },*/    
+            series: [
+                {
+                    name:'访问来源',
+                    type:'pie',
+                    selectedMode: 'single',
+                    radius: [0, '30%'],
+                    label: {
+                        normal: {
+                            position: 'inner'
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        },
+                        emphasis: {  //这个是点中某一块的时候中间显示的文本
+                            show: false,
+                            textStyle: {
+                                fontSize: '20',
+                                fontWeight: 'bold',
+                                //color:'red'
+                                //backgroundColor:'red' 
+                            },
+                        }
+                    },
+                    /*data:[
+                        {value:335, name:'直达', selected:true},
+                        {value:679, name:'营销广告'},
+                        {value:1548, name:'搜索引擎'}
+                    ]*/
+                },
+                {
+                    name:'访问来源',
+                    type:'pie',
+                    radius: ['65%', '75%'],
+                    data:[
+                        {value:20, name:'直达'},
+                        {value:20, name:'邮件营销'},
+                        {value:60, name:'联盟广告'},
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option);
+        window.onresize=window.onload = myChart.resize;
+    });
+</script>
+</head>
+<body>
+    <section class="asset_box">
+        <header class="ass_head">资产总额</header>
+        <ul class="clearfix ass_nav">
+            <li class="active"><a href="javascript:;">总资产</a></li>
+            <li><a href="javascript:;">总收益</a></li>
+        </ul>
+        <div class="ass_pie">
+            <div id="main" style="width:7.5rem;height:3.5rem;"></div>
+        </div>
+    </section>
+</body>
+</html>

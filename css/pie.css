@@ -1,0 +1,16 @@
+/* 
+* @Author: Marte
+* @Date:   2016-07-14 11:36:38
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-07-14 16:33:48
+*/
+.asset_box{ width:7.5rem; height:10rem; background:#f5f5f5; font-family:'苹方';}
+.ass_head{width:7.5rem; line-height:0.88rem; background:#0077bb; font-size:0.32rem; color:#fff;text-align:center;}
+.ass_nav{ width:7.5rem; height:0.68rem; background:#fff;}
+.ass_nav li{ float:left; font-size:0.28rem; height:0.66rem; width:1.71rem; text-align:center; line-height:0.66rem;}
+.ass_nav li:first-child{ margin-left:1rem; margin-right:2.07rem;}
+.ass_nav li a{ color:#999999;}
+.ass_nav li.active{border-bottom:0.02rem solid #0077bb;}
+.ass_nav li.active a{color:#0077bb;}
+
+.ass_pie{ width:7.5rem; height:3rem; margin-top:0.2rem; position:relative;}

@@ -1,0 +1,109 @@
+/* 
+* @Author: Marte
+* @Date:   2016-07-08 14:40:09
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-07-08 17:05:33
+*/
+* {
+    box-sizing: border-box;
+}
+html, body {
+    /*font-family: 'Open Sans', sans-serif;
+    background: #3F51B5;*/
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.section--white {
+    background: white;
+    color: #555;
+}
+.disable-mouse {
+    pointer-events: none;
+}
+.main-title {
+    color: white;
+    font-size: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    width:2rem;
+    height:0.64rem;
+    border:0.03rem solid #eeeeee;
+    text-align:center;
+    line-height:0.64rem;
+    background: #fff;
+    color: white;
+    opacity: 0.85;
+    cursor: pointer;
+    transition: 0.25s ease;
+    color:#2686c0;
+    font-size:0.28rem;
+    float:left;
+    margin-right:0.3rem;
+}
+
+.download-btn {
+    background: white;
+    color: #3F51B5;
+    font-size: 0.3rem;
+}
+/* .btn--blue {
+    background: #4A90E2;
+} */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.4rem;
+    background: #EA006F;
+    color: white;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease;
+}
+
+.modal-close-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+   /*  background: url(../img/close.png) no-repeat center; */
+    width: 0.32rem;
+    height: 0.32rem;
+    padding: 0.32rem;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-right:0.3rem;
+}
+
+.modal-close-btn:hover {
+    opacity: 1;
+}
+.modal.show {   
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.dialog {
+    background: #ffffff;
+    width:5.4rem;
+    height:3.06rem;
+    left: 50%;
+    right: auto;
+    top: 30%;
+    bottom: auto;
+    box-shadow: 0 0 0 30rem rgba(0,0,0,0.4);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius:0.1rem;
+}
+.modal h3{ font-size:0.32rem; color:#666; margin-bottom:0.5rem; margin-top:0.3rem;}
+.modal-close-btn{ font-size:0.3rem; color:#666;}
